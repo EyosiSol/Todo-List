@@ -24,6 +24,8 @@ body{
     background-color: #111526;
     height: 138px;
 }
+
+/* SIDEBAR */
 .sidebar{
     grid-area: sidebar;
     background-color: #252650;
@@ -32,12 +34,7 @@ body{
     font-size: 18px;
     color: #4EA8DE;
 }
-.mainbar{
-    grid-area: mainbar;
-    padding: 70px 120px;
-    background-color: #1C1E31;
-    height:100%;
-}
+
 .Htitle , .Ptitle {
     display: flex;
     border-bottom: 3px solid #4EA8DE;
@@ -75,6 +72,8 @@ body{
 }
 .btn button:hover{
     background-color: #181937;
+    cursor: pointer;
+
 }
 
 .add{
@@ -99,4 +98,118 @@ body{
 }
 .addbtn:hover{
     background-color: #4EA8DE;
+    cursor: pointer;
+
+}
+/* DON'T forget to ADD THE "ADD PROJECT DIV" */
+/*  */
+
+/* Main Bar */
+.mainbar{
+    grid-area: mainbar;
+    padding: 70px 120px;
+    background-color: #1C1E31;
+    height:100%;
+}
+.title{
+    border-bottom: 2px solid #4EA8DE;
+    padding: 5px 8px;
+    font-size: 22px;
+    color: #4EA8DE;
+    width: 85%;
+}
+.taskbar{
+    /* border: 1px solid #4EA8DE; */
+    padding: 25px 50px;
+    padding-right: 10px;
+    width: 85%;
+    height: fit-content;
+}
+.task{
+    background-color: #2b2d5a;
+    display: flex;
+    align-content: center;
+    padding: 12px 20px;
+    justify-content: space-between;
+    height: fit-content;
+    border-radius: 12px;
+}
+.taskLeft{
+    /* border: 1px solid #4EA8DE; */
+    height: fit-content;
+    width: 65%;
+
+}
+.taskTitle{
+    color:#5E60CE;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+.taskRight{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid #4EA8DE; */
+}
+.taskTitle > input{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.taskDesc{
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 40px
+}
+.taskDate{
+    color: #ffffff;
+    font-size: 18px;
+    background-color: #3B3C76;
+    padding: 5px 0px;
+    border-radius: 8px;
+    text-align: center;
+    width: 35%;
+}
+.taskRight .buttons{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.taskRight .buttons button{
+    background-color:  #2b2d5a;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+.taskRight .buttons button:hover{
+    background-color: #1d1f3f;
+    cursor: pointer;
+}
+.addTask{
+    width: 100%;  
+    /* border: 1px solid #4EA8DE; */
+    margin-top: 10px;
+}
+.addTaskbtn{
+    width: 100%;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    font-size: 20px;
+    background-color: #5E60CE;
+    border: none;
+    border-radius: 7px;
+    color: #ffffff;
+}
+.addTaskbtn img{
+    margin-right: 10px;
+}
+.addTaskbtn:hover{
+    background-color: #4EA8DE;
+    cursor: pointer;
 }
