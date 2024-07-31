@@ -9,9 +9,9 @@ body{
     font-family: 'Inria Sans', sans-serif;
     display: grid;
     grid-template-areas:
-    "header header header header"
-    "sidebar mainbar mainbar mainbar"
-    "sidebar mainbar mainbar mainbar"
+    "header header header header header"
+    "sidebar mainbar mainbar mainbar mainbar"
+    "sidebar mainbar mainbar mainbar mainbar"
     ;
 }
 #header{
@@ -21,14 +21,81 @@ body{
     align-items: center;
     padding: 50px 120px;
     background-color: #111526;
+    height: 138px;
 }
 .sidebar{
     grid-area: sidebar;
     background-color: #252650;
-    height: 85.2vh;
+    height: 88.5vh;
     padding: 30px 60px;  
-    font-size: 26px;
+    font-size: 22px;
+    color: #4EA8DE;
 }
 .mainbar{
     grid-area: mainbar;
+    padding: 70px 120px;
+    background-color: #1C1E31;
+    height:100%;
+}
+.Htitle , .Ptitle {
+    display: flex;
+    border-bottom: 3px solid #4EA8DE;
+    padding-left: 3px;
+}
+.Htitle img , .Ptitle img {
+    width:50px;
+    align-content: center;
+    margin-right: 6px;
+}
+.btns ,.projects{
+    margin: 20px 26px;
+    margin-right: 0px;
+}
+.btn{
+    margin-bottom: 10px;
+
+}
+.btn img{
+    width: 50px;
+    margin-right: 20px;
+}
+.btn button{
+    display: flex;
+    width: 100%;
+    background-color: #252650;
+    color: #4EA8DE;
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    align-items: center;
+    text-align: start;
+    border-radius: 10px;
+    padding: 2px 10px;
+}
+.btn button:hover{
+    background-color: #181937;
+}
+
+.add{
+    padding-left: 26px;
+}
+.addbtn{
+    display: flex;
+    width: 100%;
+    color: white;
+    font-size: 22px;
+    background-color: #5E60CE;
+    font-weight: bold;
+    border: none;
+    align-items: center;
+    text-align: start;
+    border-radius: 10px;
+    padding: 2px 10px;
+} 
+.addbtn img{
+    width: 50px;
+    margin-right: 20px;
+}
+.addbtn:hover{
+    background-color: #4EA8DE;
 }
