@@ -8,8 +8,14 @@
 body{
     font-family: 'Inria Sans', sans-serif;
     display: grid;
+    grid-template-areas:
+    "header header header header"
+    "sidebar mainbar mainbar mainbar"
+    "sidebar mainbar mainbar mainbar"
+    ;
 }
 #header{
+    grid-area: header;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,8 +23,12 @@ body{
     background-color: #111526;
 }
 .sidebar{
-
+    grid-area: sidebar;
+    background-color: #252650;
+    height: 85.2vh;
+    padding: 30px 60px;  
+    font-size: 26px;
 }
 .mainbar{
-
+    grid-area: mainbar;
 }
