@@ -213,3 +213,39 @@ body{
     background-color: #4EA8DE;
     cursor: pointer;
 }
+
+/* Modal */
+.modal{
+    width: 550px;
+    height: 500px; 
+    position: absolute;
+    transform: translate(-50%,-50%);    
+    top: 50%;
+    left: 50%;
+    border: none;
+    border-radius: 12px;
+    background-color: #3a3d72;
+
+
+}
+.modal::backdrop{
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.modal header{
+    padding: 5px 15px;
+    border: none;
+    height: 60px;
+    align-content: center;
+    background-color: #1f2042;
+}
+.modal form{
+    height: 440px;
+    padding: 30px 50px;
+}
+.title-form{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
