@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     font-family: 'Inria Sans', sans-serif;
     display: grid;
@@ -19,16 +20,16 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 120px;
+    padding: 50px 100px;
     background-color: #111526;
     height: 138px;
 }
 .sidebar{
     grid-area: sidebar;
     background-color: #252650;
-    height: 88.5vh;
+    height: 85.6vh;
     padding: 30px 60px;  
-    font-size: 22px;
+    font-size: 18px;
     color: #4EA8DE;
 }
 .mainbar{
@@ -43,7 +44,7 @@ body{
     padding-left: 3px;
 }
 .Htitle img , .Ptitle img {
-    width:50px;
+    width:35px;
     align-content: center;
     margin-right: 6px;
 }
@@ -56,7 +57,7 @@ body{
 
 }
 .btn img{
-    width: 50px;
+    width: 28px;
     margin-right: 20px;
 }
 .btn button{
@@ -64,7 +65,7 @@ body{
     width: 100%;
     background-color: #252650;
     color: #4EA8DE;
-    font-size: 22px;
+    font-size: 23px;
     font-weight: bold;
     border: none;
     align-items: center;
@@ -83,7 +84,7 @@ body{
     display: flex;
     width: 100%;
     color: white;
-    font-size: 22px;
+    font-size: 18px;
     background-color: #5E60CE;
     font-weight: bold;
     border: none;
@@ -93,7 +94,7 @@ body{
     padding: 2px 10px;
 } 
 .addbtn img{
-    width: 50px;
+    width: 30px;
     margin-right: 20px;
 }
 .addbtn:hover{
