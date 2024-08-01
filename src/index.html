@@ -53,14 +53,14 @@
                     </div>
                 </div>
             </div>
-            <div class="addTask">
-                <button class="addTaskbtn" id="addtask"><img src="../src/assets/add_circle.svg" alt="">Add Task</button>
-            </div>
+        </div>
+        <div class="addTask">
+            <button class="addTaskbtn" id="addtask"><img src="../src/assets/add_circle.svg" alt="">Add Task</button>
         </div>
     </div>
     <dialog class="modal" id="modal">
         <header> Add Task</header>
-        <form id="bookform" method="dialog" onsubmit="submitForm()">
+        <form id="taskform" method="dialog">
           <div class="title-form form">
             <label for="title" >Title:</label>
             <input type="text" name="title" id="title" placeholder="Eg: The Art of War" required/>
@@ -72,7 +72,7 @@
           <div class="Date-form form">
             <label for="pages">Pages:</label>
             <div class="dateform">
-            <input type="date" name ="page" id="pages" placeholder="Eg: 246 pages" required/>
+            <input type="date" name ="date" id="date" placeholder="Eg: 246 pages" required/>
             </div>
           </div>
           <div class="submit"><button type="submit" id="Add">Add</button>
