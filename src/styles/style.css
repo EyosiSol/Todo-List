@@ -216,15 +216,15 @@ body{
 
 /* Modal */
 .modal{
-    width: 550px;
-    height: 500px; 
+    width: 600px;
+    height: 530px; 
     position: absolute;
     transform: translate(-50%,-50%);    
     top: 50%;
     left: 50%;
     border: none;
     border-radius: 12px;
-    background-color: #3a3d72;
+    background-color: #2c2e58;
 
 
 }
@@ -239,13 +239,66 @@ body{
     height: 60px;
     align-content: center;
     background-color: #1f2042;
+    border-radius: 12px 12px 0px 0px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #4EA8DE;
 }
 .modal form{
-    height: 440px;
-    padding: 30px 50px;
+    height: 500px;
+    padding: 40px 60px;
 }
-.title-form{
+.title-form, .Desc-form, .Date-form{
     display: flex;
     flex-direction: column;
     font-size: 20px;
+}
+.dateform{
+    display: flex;
+    width: 100%;
+    align-content: center;
+}
+.dateform input , .title-form input , .Desc-form textarea{
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+label{
+    font-size: 23px;
+    font-weight: bold;
+    color: #4EA8DE;
+}
+#Desc{
+    height: 100px;
+    padding: 3px;
+}
+.form{
+    margin-bottom: 10px;
+}
+.submit{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.submit button{
+    width: 120px;
+    height: 40px;
+    font-size: 25px;
+    border-radius: 6px;
+    border: none;
+}
+#Add{
+    background-color: #4EA8DE;
+}
+#cancel{
+    background-color: #DE4E82;
+}
+#Add:hover{
+    background-color: #3d82ad;
+}
+#cancel:hover{
+    background-color: #a3385f;
 }
