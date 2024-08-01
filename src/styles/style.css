@@ -245,7 +245,7 @@ body{
     color: #4EA8DE;
 }
 .modal form{
-    height: 500px;
+    height: auto;
     padding: 40px 60px;
 }
 .title-form, .Desc-form, .Date-form{
