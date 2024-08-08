@@ -119,26 +119,26 @@ body{
     width: 85%;
 }
 .taskbar{
-    /* border: 1px solid #4EA8DE; */
+    border: 1px solid #4EA8DE;
     padding: 25px 50px;
     padding-right: 10px;
-    width: 85%;
+    width: 100%;
     height: fit-content;
 }
 .task{
     background-color: #2b2d5a;
     display: flex;
     align-content: center;
-    padding: 12px 20px;
+    padding: 12px 30px;
     justify-content: space-between;
     height: fit-content;
     border-radius: 12px;
+    padding-right: 40px;
 }
 .taskLeft{
     /* border: 1px solid #4EA8DE; */
     height: fit-content;
-    width: 65%;
-
+    width: 20%;
 }
 .taskTitle{
     color:#5E60CE;
@@ -147,7 +147,7 @@ body{
     align-items: center;
 }
 .taskRight{
-    width: 35%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -160,6 +160,7 @@ body{
 }
 .taskDesc{
     color: white;
+    width: 90%;
     font-size: 18px;
     margin-top: 10px;
     margin-left: 40px
