@@ -112,18 +112,19 @@ body{
     height:100%;
 }
 .title{
-    border-bottom: 2px solid #4EA8DE;
+    /* border-bottom: 2px solid #4EA8DE; */
     padding: 5px 8px;
     font-size: 22px;
     color: #4EA8DE;
     width: 85%;
 }
 .taskbar{
-    border: 1px solid #4EA8DE;
+    /* border: 1px solid #4EA8DE; */
     padding: 25px 50px;
     padding-right: 10px;
-    width: 100%;
-    height: fit-content;
+    width: auto;
+    display: grid;
+    grid-template-rows: auto;
 }
 .task{
     background-color: #2b2d5a;
@@ -131,9 +132,10 @@ body{
     align-content: center;
     padding: 12px 30px;
     justify-content: space-between;
-    height: fit-content;
+    height: auto;
     border-radius: 12px;
     padding-right: 40px;
+    margin-bottom: 20px;
 }
 .taskLeft{
     /* border: 1px solid #4EA8DE; */

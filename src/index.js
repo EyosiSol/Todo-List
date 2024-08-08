@@ -1,6 +1,7 @@
 import mypic from "./assets/logo.png"
 import "./styles/style.css";
 import modal from "./modal.js"
+import all from "./all DEMO.js"
 
 
 const logodiv = document.getElementById('logo');
@@ -12,4 +13,5 @@ logodiv.appendChild(logo);
 console.log("Hello World");
 
 
-modal();
+// modal();
+all();

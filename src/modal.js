@@ -11,21 +11,34 @@ openModal.addEventListener('click',()=>{
 closeModal.addEventListener('click',()=>{
   modal.close();
 })
+// submit.addEventListener('click',()=>{
+//   const myForm = document.querySelector('#taskform');
+
+//   const myTitle = document.querySelector('#title');
+//   const myDesc = document.querySelector('#Desc');
+//   const myDate = document.querySelector('#date');
+
+
+//   console.log(`${myTitle.value} and ${myDesc.value} and ${myDate.value}`);
+  
+
+
+//   myForm.reset();
+
+//   modal.close();
+  
+// })
+
 submit.addEventListener('click',()=>{
   const myForm = document.querySelector('#taskform');
-
-  const myTitle = document.querySelector('#title');
-  const myDesc = document.querySelector('#Desc');
-  const myDate = document.querySelector('#date');
-
+  const myTitle = myForm["title"];
+  const myDesc = myForm["Desc"];
+  const myDate = myForm["date"];
 
   console.log(`${myTitle.value} and ${myDesc.value} and ${myDate.value}`);
   
 
-
   myForm.reset();
-
   modal.close();
-  
 })
 }
