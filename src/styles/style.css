@@ -104,6 +104,52 @@ body{
 /* DON'T forget to ADD THE "ADD PROJECT DIV" */
 /*  */
 
+.addproject{
+    /* border: 1px solid #4EA8DE; */
+    border-radius: 12px;
+    background: #1B1B37;
+    height:auto;
+    padding: 23px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+#projectTitle{
+    width: 100%;
+    font-size: 24px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.add-cancel{
+    /* border: 1px solid #4EA8DE; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 25vh;
+    align-self: center;
+}
+.add-cancel > button{
+    font-size: 25px;
+    font-weight:500;
+    padding: 4px 20px;
+    border: none;
+}
+#addProject{
+    background-color: #4EA8DE;
+    border-radius: 5px;
+}
+#cancelProject{
+    background-color: #DE4E82;
+    border-radius: 5px;
+}
+#addProject:hover{
+    background-color: #3e84af;
+    border-radius: 5px;
+}
+#cancelProject:hover{
+    background-color: #af3b66;
+    border-radius: 5px;
+}
 /* Main Bar */
 .mainbar{
     grid-area: mainbar;
@@ -216,6 +262,7 @@ body{
     background-color: #4EA8DE;
     cursor: pointer;
 }
+
 
 /* Modal */
 .modal{
