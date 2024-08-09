@@ -1,44 +1,19 @@
 export default function modal(){
 
-const openModal = document.querySelector('#addtask');
-const closeModal = document.querySelector('#cancel');
-const modal = document.querySelector('#modal');
-const submit = document.querySelector('#Add');
+  //creating the variables for the modal//
+  const openModal = document.querySelector("#addtask");
+  const closeModal = document.querySelector("#cancel");
+  const modal = document.querySelector("#modal");
+  const submit = document.querySelector("#Add");
 
-openModal.addEventListener('click',()=>{
-  modal.showModal();
-})
-closeModal.addEventListener('click',()=>{
-  modal.close();
-})
-// submit.addEventListener('click',()=>{
-//   const myForm = document.querySelector('#taskform');
-
-//   const myTitle = document.querySelector('#title');
-//   const myDesc = document.querySelector('#Desc');
-//   const myDate = document.querySelector('#date');
-
-
-//   console.log(`${myTitle.value} and ${myDesc.value} and ${myDate.value}`);
+  openModal.addEventListener("click", () => {
+    modal.showModal();
+  });
+  closeModal.addEventListener("click", () => {
+    modal.close();
+  });
   
 
+  //the logic for the submit button
 
-//   myForm.reset();
-
-//   modal.close();
-  
-// })
-
-submit.addEventListener('click',()=>{
-  const myForm = document.querySelector('#taskform');
-  const myTitle = myForm["title"];
-  const myDesc = myForm["Desc"];
-  const myDate = myForm["date"];
-
-  console.log(`${myTitle.value} and ${myDesc.value} and ${myDate.value}`);
-  
-
-  myForm.reset();
-  modal.close();
-})
 }
