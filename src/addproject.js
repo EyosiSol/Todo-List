@@ -16,12 +16,37 @@ export default function addproject(){
                     </div>
                 </div>
         `
+        const cancelbtn = document.querySelector("#cancelProject")
+
+        cancelbtn.addEventListener('click',()=>{
+            addingproject.innerHTML = ""
+            
+        });
+
+        const addbtn = document.querySelector("#addProject")
+        addbtn.addEventListener('click',()=>{
+            const projectform = document.querySelector("#projectform")
+            const projectTitle = projectform.projectTitle.value
+            const projectsdiv = document.querySelector('.projects')
+            projectform.reset()
+
+
+            const project = {projectTitle}
+            const projects = JSON.parse(localStorage.getItem('{projectTitle}')) || []
+            projects.push(project)
+            localStorage.setItem('projects', JSON.stringify(project))
+            document.dispatchEvent(new Event('projectsUpdated'))
+
+            projectsdiv.innerHTML += `
+                <div class="btn">
+                <button><img src="../src/assets/List.svg" alt="">${projectTitle}</button></div>
+            `
+            addingproject.innerHTML = ""
+
+        })
     })
 
 
-    // const cancel = document.querySelector("#cancelProject")
+   
 
-    // cancel.addEventListener('click',()=>{
-    //     addingproject.innerHTML =  ``
-    // })
 }
