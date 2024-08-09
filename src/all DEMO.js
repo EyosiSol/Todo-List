@@ -26,9 +26,9 @@ export default function all() {
     return { title, Description, Date };
   };
 
-  submit.addEventListener("click", () => {
+  submit.addEventListener("click", (e) => {
 
-    // e.preventDefault();
+    e.preventDefault();
 
     const myForm = document.querySelector("#taskform");
     const myTitle = myForm["title"];
@@ -78,7 +78,8 @@ export default function all() {
   `;
     const taskbar = document.querySelector(".taskbar");
 
-    taskbar.appendChild(task)};
+    taskbar.appendChild(task)
+};
 
 };
   //Task Object
