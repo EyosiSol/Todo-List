@@ -32,7 +32,7 @@ export default function addproject(){
 
 
             const project = {projectTitle}
-            const projects = JSON.parse(localStorage.getItem('{projectTitle}')) || []
+            const projects = JSON.parse( localStorage.getItem('{projectTitle}')) || []
             projects.push(project)
             localStorage.setItem('projects', JSON.stringify(project))
             document.dispatchEvent(new Event('projectsUpdated'))
