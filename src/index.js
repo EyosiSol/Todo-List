@@ -14,8 +14,8 @@ logodiv.appendChild(logo);
 console.log("Hello World");
 
 
-modal();
-taskTemp.forEach(createDOM);
+// modal();
+// taskTemp.forEach(createDOM);
 
 addproject();
 
