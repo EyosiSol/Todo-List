@@ -72,15 +72,27 @@ export default function all() {
                   <div class="buttons">
                       <button id="favbtn"><img src="../src/assets/star_filled.svg" alt=""></button>
                       <button id="editbtn"><img src="../src/assets/edit.svg" alt=""></button>
-                      <button id="Delbtn"><img src="../src/assets/delete.svg" alt=""></button>
+                      <button id="Delbtn${title}"><img src="../src/assets/delete.svg" alt=""></button>
                   </div>
               </div>
   `;
     const taskbar = document.querySelector(".taskbar");
 
     taskbar.appendChild(task)
-};
 
+    const delbtn = document.getElementById(`Delbtn${title}`);
+
+    delbtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      localStorage.setItem("tasks", JSON.stringify(taskTemp.filter((task)=>(task.title !== title))));  
+      task.remove();    
+      
+    });
+
+
+};
+    
+    
 };
   //Task Object
 

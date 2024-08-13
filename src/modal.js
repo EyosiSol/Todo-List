@@ -1,5 +1,6 @@
 import createDOM from "./createDOM.js";
 import addTask from "./addTask.js";
+import taskTemp from "./taskTemp.js";
 
 export default function modal(){
 
@@ -41,8 +42,11 @@ export default function modal(){
     modal.close();
         
     });
- 
-  
 
+    
+    taskTemp.forEach(createDOM);
+
+
+    //del button
 
 }
