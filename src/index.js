@@ -3,7 +3,7 @@ import "./styles/style.css";
 import modal from "./modal.js"
 import todo from './myobject.js'
 import master from "./master.js";
-
+import tasksDOM from "./tasksDOM.js";
 
 
 
@@ -23,6 +23,7 @@ if(projectTitle.innerText == ''){
 
 // modal();
 master()
+tasksDOM(todo)
 
 // allDemo();
 

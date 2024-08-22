@@ -1,5 +1,6 @@
 // import addingTask from "./addingTask";
 import todo from './myobject'
+import tasksDOM from './tasksDOM';
 import {
   isToday,
   parseISO,
@@ -24,20 +25,22 @@ export default function modal(){
   });
 
   submit.addEventListener("click", () => {
-    const projectTitle = document.getElementById('title').innerText
+  const form = document.getElementById('taskform')
+      const projectTitle = document.getElementById('title').innerText
     const title = document.getElementById('Tasktitle').value
     const description = document.getElementById('Desc').value
     const date = parseISO(document.getElementById("date").value);
 
     addingTask(todo,projectTitle,title,description,date)
+    form.reset()
+    modal.close()
+    
+    tasksDOM(todo,projectTitle);
 
   });
-  const form = document.getElementById('taskform')
-    //del button
-    form.reset()
-    
+  
 
-  }
+}
 
  function addingTask(
     todo,

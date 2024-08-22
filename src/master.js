@@ -2,9 +2,9 @@ import todo from './myobject'
 import addingproject  from './addingProject';
 import projectDOM from './projectDOM';
 import addingTask from './addingTask';
-import homebar from './homebar';
+import homebar from './sidebar';
 import modal from './modal';
-
+import tasksDOM from './tasksDOM';
 import {
     isToday,
     parseISO,
