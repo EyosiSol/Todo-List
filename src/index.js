@@ -16,10 +16,12 @@ logodiv.appendChild(logo);
 
 console.log("Hello World");
 
-
+const projectTitle = document.getElementById('title')
+if(projectTitle.innerText == ''){
+    projectTitle.innerText = 'All Task';
+}
 
 // modal();
-
 master()
 
 // allDemo();

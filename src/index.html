@@ -16,10 +16,10 @@
         <div class="homebar">
             <div class="Htitle"><img src="../src/assets/Home.svg" alt=""><h1>Home</h1></div>
             <div class="btns">
-                <div class="all btn"> <button><img src="../src/assets/Inbox.svg" alt="">All</button></div>
-                <div class="today btn"><button><img src="../src/assets/today.svg" alt="">Today</button></div>
-                <div class="week btn"><button><img src="../src/assets/Calendar.svg" alt="">This Week</button></div>
-                <div class="fav btn"><button><img src="../src/assets/star.svg" alt=""> Important</button></div>
+                <div class="all btn"> <button id="All"><img src="../src/assets/Inbox.svg" alt="">All</button></div>
+                <div class="today btn"><button id="Today"><img src="../src/assets/today.svg" alt="">Today</button></div>
+                <div class="week btn"><button id="ThisWeek"><img src="../src/assets/Calendar.svg" alt="">This Week</button></div>
+                <div class="fav btn"><button id="Important"><img src="../src/assets/star.svg" alt=""> Important</button></div>
             </div>
         </div>
         <div class="projectbar">
@@ -45,7 +45,7 @@
     </div>
     <div class="mainbar">
         <div class="title">
-            <h1 id="title"></h1>
+            <h1 id="title"> </h1>
         </div>
         <div class="taskbar">
             <!-- <div class="task">
@@ -76,7 +76,7 @@
         <form id="taskform" method="dialog">
           <div class="title-form form">
             <label for="title" >Title:</label>
-            <input type="text" name="title" id="title" placeholder="Eg: The Art of War" required/>
+            <input type="text" name="title" id="Tasktitle" placeholder="Eg: The Art of War" required/>
           </div>
           <div class="Desc-form form">
             <label for="Desc">Author:</label>

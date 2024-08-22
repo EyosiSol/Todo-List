@@ -1,3 +1,12 @@
+// import addingTask from "./addingTask";
+import todo from './myobject'
+import {
+  isToday,
+  parseISO,
+  format,
+  addDays,
+  isWithinInterval,
+} from "date-fns";
 
 export default function modal(){
 
@@ -13,11 +22,39 @@ export default function modal(){
   closeModal.addEventListener("click", () => {
     modal.close();
   });
-  
 
-  //the logic for the submit button
+  submit.addEventListener("click", () => {
+    const projectTitle = document.getElementById('title').innerText
+    const title = document.getElementById('Tasktitle').value
+    const description = document.getElementById('Desc').value
+    const date = parseISO(document.getElementById("date").value);
 
-  submit.addEventListener("click", (e) => {});
+    addingTask(todo,projectTitle,title,description,date)
+
+  });
+  const form = document.getElementById('taskform')
     //del button
+    form.reset()
+    
 
-}
+  }
+
+ function addingTask(
+    todo,
+    projectTitle,
+    title,
+    description,
+    date
+  ) {
+    if(!(projectTitle == 'All Task' || projectTitle =='Today' || projectTitle == 'This Week')){
+      let tasks = {};
+      tasks[title] = { title, description, date };
+      todo[projectTitle][title] = { title, description, date };
+      localStorage.setItem("todo", JSON.stringify(todo));
+    }
+    else{
+      console.log('else');
+      
+    }
+    
+  }

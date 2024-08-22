@@ -1,11 +1,14 @@
-import todo from './myobject.js'
+import todo from "./myobject";
 
-export default function addingTask(){
-    const projectsdiv = document.querySelector('.projects')
-    projectsdiv.addEventListener('click',(e)=>{
-        if(!(e.target.innerText === 'Add' || e.target.innerText =='Cancel' || e.target.innerText == null)){
-            const title = document.getElementById('title');
-            title.innerText = e.target.innerText;
-        }
-    })
+export default function addingTask(
+  todo,
+  projectTitle,
+  title,
+  description,
+  date
+) {
+  let tasks = {};
+  tasks [title] = { title, description, date };
+  todo [projectTitle][title] = { title, description, date };
+  localStorage.setItem("todo", JSON.stringify(todo));
 }
