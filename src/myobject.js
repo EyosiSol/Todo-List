@@ -1,3 +1,3 @@
+const todo =  JSON.parse(localStorage.getItem("todo")) || {};
 
-
-export default taskTemp;
+export default todo;

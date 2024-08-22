@@ -10,9 +10,9 @@ body{
     font-family: 'Inria Sans', sans-serif;
     display: grid;
     grid-template-areas:
-    "header header header header header"
-    "sidebar mainbar mainbar mainbar mainbar"
-    "sidebar mainbar mainbar mainbar mainbar"
+    "header  header header header header header"
+    "sidebar mainbar mainbar mainbar mainbar mainbar"
+    "sidebar mainbar mainbar mainbar mainbar mainbar"
     ;
 }
 #header{
