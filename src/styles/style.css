@@ -8,9 +8,15 @@
 
 body{
     font-family: 'Inria Sans', sans-serif;
+    
+    ;
+}
+.mycontainer{
+    height: 100vh;
     display: grid;
     grid-template-areas:
     "header  header header header header header"
+    /* "header  header header header header header" */
     "sidebar mainbar mainbar mainbar mainbar mainbar"
     "sidebar mainbar mainbar mainbar mainbar mainbar"
     "sidebar mainbar mainbar mainbar mainbar mainbar"
@@ -20,9 +26,6 @@ body{
     "sidebar mainbar mainbar mainbar mainbar mainbar"
     "sidebar mainbar mainbar mainbar mainbar mainbar"
     "sidebar mainbar mainbar mainbar mainbar mainbar"
-
-
-    ;
 }
 #header{
     grid-area: header;
@@ -31,7 +34,6 @@ body{
     align-items: center;
     padding: 50px 100px;
     background-color: #111526;
-    height: 138px;
 }
 
 /* SIDEBAR */
