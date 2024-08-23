@@ -18,13 +18,7 @@ body{
     "header  header header header header header"
     "sidebar mainbar mainbar mainbar mainbar mainbar"
     "sidebar mainbar mainbar mainbar mainbar mainbar"
-    "sidebar mainbar mainbar mainbar mainbar mainbar"
-    "sidebar mainbar mainbar mainbar mainbar mainbar"
-    "sidebar mainbar mainbar mainbar mainbar mainbar"
-    "sidebar mainbar mainbar mainbar mainbar mainbar"
-    "sidebar mainbar mainbar mainbar mainbar mainbar"
-    "sidebar mainbar mainbar mainbar mainbar mainbar"
-    "sidebar mainbar mainbar mainbar mainbar mainbar"
+   
 }
 #header{
     grid-area: header;
