@@ -20,8 +20,6 @@ export default function Today(todo) {
             <div class="taskRight">
                 <div class="taskDate">${format(todo[task][tasks].date,"dd/MM/yyyy",new Date())}</div>
                 <div class="buttons">
-                    <button id="favbtn"><img src="../src/assets/star_filled.svg" alt=""></button>
-                    <button id="editbtn"><img src="../src/assets/edit.svg" alt=""></button>
                     <button id="Delbtn"><img src="../src/assets/delete.svg" alt=""></button>
                 </div>
             </div>
