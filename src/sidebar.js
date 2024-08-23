@@ -1,27 +1,31 @@
 import { add } from "date-fns";
 import tasksDOM from "./tasksDOM";
 import todo from "./myobject";
+import showall from "./showall";
+import Today from "./Today";
+import Thisweek from "./Thisweek";
 
-export default function homebar(){
+export default function sidebar(){
     const Allbtn = document.getElementById('All')
     Allbtn.addEventListener('click',()=>{
         console.log('Allbtn');
         const projectTitle = document.getElementById('title')
         projectTitle.innerText = 'All Task'
-        const addTask = document.querySelector('.addTask')
-        
+        showall(todo)
     })
     const TodayBtn = document.getElementById('Today')
     TodayBtn.addEventListener('click',()=>{
         console.log('Today')
         const projectTitle = document.getElementById('title')
         projectTitle.innerText = 'Today'
+        Today(todo);
     })
     const ThisWeek = document.getElementById('ThisWeek')
     ThisWeek.addEventListener('click',()=>{
         console.log('This Week')
         const projectTitle = document.getElementById('title')
         projectTitle.innerText = 'This Week'
+        Thisweek(todo);
     })
 
     const projectsdiv = document.querySelector('.projects')

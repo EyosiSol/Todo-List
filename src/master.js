@@ -2,7 +2,7 @@ import todo from './myobject'
 import addingproject  from './addingProject';
 import projectDOM from './projectDOM';
 import addingTask from './addingTask';
-import homebar from './sidebar';
+import sidebar from './sidebar';
 import modal from './modal';
 import tasksDOM from './tasksDOM';
 import {
@@ -14,7 +14,7 @@ import {
   } from "date-fns";
 
   export default function master(){
-    homebar();
+    sidebar();
     addingproject();
     projectDOM(todo)
     // addingTask();

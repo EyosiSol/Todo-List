@@ -13,6 +13,15 @@ body{
     "header  header header header header header"
     "sidebar mainbar mainbar mainbar mainbar mainbar"
     "sidebar mainbar mainbar mainbar mainbar mainbar"
+    "sidebar mainbar mainbar mainbar mainbar mainbar"
+    "sidebar mainbar mainbar mainbar mainbar mainbar"
+    "sidebar mainbar mainbar mainbar mainbar mainbar"
+    "sidebar mainbar mainbar mainbar mainbar mainbar"
+    "sidebar mainbar mainbar mainbar mainbar mainbar"
+    "sidebar mainbar mainbar mainbar mainbar mainbar"
+    "sidebar mainbar mainbar mainbar mainbar mainbar"
+
+
     ;
 }
 #header{
@@ -29,7 +38,6 @@ body{
 .sidebar{
     grid-area: sidebar;
     background-color: #252650;
-    height: 85.6vh;
     padding: 30px 60px;  
     font-size: 18px;
     color: #4EA8DE;
