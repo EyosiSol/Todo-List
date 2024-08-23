@@ -4,7 +4,7 @@ import modal from "./modal.js"
 import todo from './myobject.js'
 import master from "./master.js";
 import tasksDOM from "./tasksDOM.js";
-
+import showall from "./showall.js";
 
 
 
@@ -16,14 +16,11 @@ logodiv.appendChild(logo);
 
 console.log("Hello World");
 
-const projectTitle = document.getElementById('title')
-if(projectTitle.innerText == ''){
-    projectTitle.innerText = 'All Task';
-}
 
-// modal();
+modal();
 master()
-tasksDOM(todo)
+// tasksDOM(todo)
+showall(todo)
 
 // allDemo();
 
