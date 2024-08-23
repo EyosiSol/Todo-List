@@ -30,10 +30,15 @@ export default function addingproject(){
         const addProjectbtn = document.getElementById('addProject')
         addProjectbtn.addEventListener('click',()=>{
             const projectTitle = document.getElementById('projectTitle').value
-            addnewproject(todo,projectTitle);
-            localStorage.setItem("todo", JSON.stringify(todo));
-            projectDOM(todo);
-            addingform.remove();
+            if(!(projectTitle == '')){
+                addnewproject(todo,projectTitle);
+                localStorage.setItem("todo", JSON.stringify(todo));
+                projectDOM(todo);
+                addingform.remove();
+            }else{
+                window.alert('insert a Title')
+            }
+           
 
         })
     })

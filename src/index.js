@@ -5,7 +5,7 @@ import todo from './myobject.js'
 import master from "./master.js";
 import tasksDOM from "./tasksDOM.js";
 import showall from "./showall.js";
-
+import deletingTask from "./deletingTask.js";
 
 
 const logodiv = document.getElementById('logo');
@@ -21,7 +21,7 @@ modal();
 master()
 // tasksDOM(todo)
 showall(todo)
-
+// deletingTask()
 // allDemo();
 
 // addproject();

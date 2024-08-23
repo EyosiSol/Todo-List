@@ -1,16 +1,9 @@
 // import addingTask from "./addingTask";
-import todo from './myobject'
-import tasksDOM from './tasksDOM';
-import {
-  isToday,
-  parseISO,
-  format,
-  addDays,
-  isWithinInterval,
-} from "date-fns";
+import todo from "./myobject";
+import tasksDOM from "./tasksDOM";
+import { isToday, parseISO, format, addDays, isWithinInterval } from "date-fns";
 
-export default function modal(){
-
+export default function modal() {
   //creating the variables for the modal//
   const openModal = document.querySelector("#addtask");
   const closeModal = document.querySelector("#cancel");
@@ -25,39 +18,33 @@ export default function modal(){
   });
 
   submit.addEventListener("click", () => {
-  const form = document.getElementById('taskform')
-      const projectTitle = document.getElementById('title').innerText
-    const title = document.getElementById('Tasktitle').value
-    const description = document.getElementById('Desc').value
+    const projectTitle = document.getElementById("title").innerText;
+    const title = document.getElementById("Tasktitle").value;
+    const description = document.getElementById("Desc").value;
     const date = parseISO(document.getElementById("date").value);
 
-    addingTask(todo,projectTitle,title,description,date)
-    form.reset()
+    addingTask(todo, projectTitle, title, description, date);
+    tasksDOM(todo, projectTitle);
+    const form = document.getElementById("taskform");
+    form.reset();
     modal.close()
-    
-    tasksDOM(todo,projectTitle);
-
   });
   
-
 }
 
- function addingTask(
-    todo,
-    projectTitle,
-    title,
-    description,
-    date
+function addingTask(todo, projectTitle, title, description, date) {
+  if (
+    !(
+      projectTitle == "All Task" ||
+      projectTitle == "Today" ||
+      projectTitle == "This Week"
+    )
   ) {
-    if(!(projectTitle == 'All Task' || projectTitle =='Today' || projectTitle == 'This Week')){
-      let tasks = {};
-      tasks[title] = { title, description, date };
-      todo[projectTitle][title] = { title, description, date };
-      localStorage.setItem("todo", JSON.stringify(todo));
-    }
-    else{
-      console.log('else');
-      
-    }
-    
+    let tasks = {};
+    tasks[title] = { title, description, date };
+    todo[projectTitle][title] = { title, description, date };
+    localStorage.setItem("todo", JSON.stringify(todo));
+  } else {
+    console.log("else");
   }
+}

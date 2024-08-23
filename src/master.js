@@ -6,6 +6,7 @@ import sidebar from './sidebar';
 import modal from './modal';
 import tasksDOM from './tasksDOM';
 import showall from './showall';
+import deletingTask from './deletingTask';
 import {
     isToday,
     parseISO,
@@ -23,4 +24,5 @@ import {
     projectDOM(todo)
     // addingTask();
     modal()
+    // deletingTask(todo);
   }

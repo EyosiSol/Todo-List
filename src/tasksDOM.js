@@ -22,11 +22,25 @@ export default function tasksDOM(todo,projectTitle) {
         <div class="taskRight">
             <div class="taskDate">${ format(tasks[task].date, "dd/MM/yyyy", new Date())}</div>
             <div class="buttons">
-                <button id="favbtn"><img src="../src/assets/star_filled.svg" alt=""></button>
-                <button id="editbtn"><img src="../src/assets/edit.svg" alt=""></button>
-                <button id="Delbtn"><img src="../src/assets/delete.svg" alt=""></button>
+                <button id="Delbtn ${tasks[task].title} "><img src="../src/assets/delete.svg" alt="" id='Del ${tasks[task].title}'></button>
             </div>
         </div>`;
     tasksDiv.appendChild(a_task)
   }
+  tasksDiv.addEventListener('click',(e)=>{
+    const target = e.target.id.split(" ")
+    const firstpart = target[0]
+    const secondpart = target.slice(1).join(" ");
+    // console.log(target); 
+    if(firstpart=== 'Delbtn' ||firstpart === 'Del'){
+      console.log('deleting');
+      console.log(projectTitle)
+      console.log(todo[projectTitle][secondpart]);
+
+      delete todo[projectTitle][secondpart];
+      localStorage.setItem("todo", JSON.stringify(todo));
+
+      tasksDOM(todo,projectTitle)
+    }
+  })
 }
