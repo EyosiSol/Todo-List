@@ -26,6 +26,8 @@ export default function sidebar(){
         const projectTitle = document.getElementById('title')
         projectTitle.innerText = 'This Week'
         Thisweek(todo);
+        const addTask = document.querySelector('.addTask')
+        addTask.style.display = 'none';
     })
 
     const projectsdiv = document.querySelector('.projects')
@@ -35,6 +37,8 @@ export default function sidebar(){
             projectTitle.innerText = e.target.innerText;
             console.log(projectTitle.innerText);
             tasksDOM(todo,projectTitle.innerText);
+            const addTask = document.querySelector('.addTask')
+        addTask.style.display = 'block';
         }
     })
 }
