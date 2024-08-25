@@ -15,10 +15,8 @@ export default function Thisweek(todo) {
     console.log(project);
     
     for (let tasks in todo[project]) {
-      // console.log(tasks);
       
       let taskDate = todo[project][tasks].date;
-      // console.log(taskDate);
       
       if (
         isWithinInterval(taskDate, {
@@ -68,6 +66,3 @@ export default function Thisweek(todo) {
     }
   });
 }
-
-{/* <button id="favbtn"><img src="../src/assets/star_filled.svg" alt=""></button>
-<button id="editbtn"><img src="../src/assets/edit.svg" alt=""></button> */}

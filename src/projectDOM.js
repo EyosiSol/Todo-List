@@ -10,6 +10,4 @@ export default function projectDOM(todo){
         btndiv.innerHTML = `<button id='prjctbtn'><img src="../src/assets/List.svg" alt="">${projects}</button> `  
         projectsdiv.appendChild(btndiv);
     }
-
-
 }

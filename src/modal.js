@@ -1,4 +1,3 @@
-// import addingTask from "./addingTask";
 import todo from "./myobject";
 import tasksDOM from "./tasksDOM";
 import { parseISO, isValid, format } from "date-fns";  // Updated to use format
@@ -39,7 +38,7 @@ export default function modal() {
 }
 
 function addingTask(todo, projectTitle, title, description, date) {
-  // Prevent adding tasks with invalid projectTitle, title, description, or date
+  // Prevent adding tasks with invalid projectTitle,
   if (
     !(
       projectTitle === "All Task" ||
