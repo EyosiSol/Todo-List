@@ -31,7 +31,7 @@ export default function showall(todo) {
             <div class="taskDesc">${todo[tasks][task].description}</div>
         </div>
         <div class="taskRight">
-            <div class="taskDate">${ format(parseISO(taskDate), "dd/MM/yyyy") }</div>  <!-- Format the date -->
+            <div class="taskDate">${format(parseISO(taskDate), "dd/MM/yyyy") }</div>  <!-- Format the date -->
             <div class="buttons">
                 <button id="Delbtn ${todo[tasks][task].title} " class=' ${tasks} ' >
                   <img src="../src/assets/delete.svg" id='Del ${todo[tasks][task].title}' class='${tasks}' alt="">
