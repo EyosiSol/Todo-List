@@ -7,14 +7,17 @@ export default function addingTask(
   description,
   date
 ) {
-  if(!(title === "" || description === "" || date === "" || date === 'null')){
-    let tasks = {};
+
+  try{
     tasks [title] = { title, description, date };
     todo [projectTitle][title] = { title, description, date };
     localStorage.setItem("todo", JSON.stringify(todo));
-  }else{
-    window.alert('form is empty')
   }
-  
-
+  catch(error){
+    if((error instanceof RangeError)){
+      windows.alert("Invalid time format: ", error)
+    }else{
+      throw error;
+    }
+  }
 }
