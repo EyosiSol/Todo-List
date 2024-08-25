@@ -20,7 +20,7 @@ One of my main project for my protfolio
 - Mastered how webpack works
 - Must edit and work on it on everychance you got 
 
-# IT IS ON BETA VERSION 
+# !!!IT IS ON BETA VERSION!!! 
 
 # THE LINK IS BELOW
-
+https://eyosisol.github.io/Todo-List/
