@@ -10,40 +10,43 @@ export default function Thisweek(todo) {
   console.log(today);
   console.log(nextweek);
 
-  for (const task in todo) {
-    console.log(task);
+  // const project = todo[]
+  for (const project in todo) {
+    console.log(project);
     
-    for (const tasks in todo[task]) {
-      console.log(tasks);
+    for (let tasks in todo[project]) {
+      // console.log(tasks);
       
-      let taskDate = todo[tasks][task].date;
+      let taskDate = todo[project][tasks].date;
+      // console.log(taskDate);
+      
       if (
         isWithinInterval(taskDate, {
           start: today,
           end: nextweek,
         })
       ) {
-        console.log(todo[task][tasks].title);
-        console.log(todo[task][tasks].description);
+        console.log(todo[project][tasks].title);
+        console.log (todo[project][tasks].description);
         
         
-        // const a_task = document.createElement("div");
-        // a_task.classList.add("task");
-        // a_task.innerHTML = `
-        //     <div class="taskleft"> 
-        //         <div class="taskTitle"><input type="checkbox">${todo[task][tasks].title}:</div>
-        //         <div class="taskDesc">${todo[task][tasks].description}</div>
-        //     </div>
-        //     <div class="taskRight">
-        //         <div class="taskDate">${format(todo[task][tasks].date,"dd/MM/yyyy",new Date())}</div>
-        //         <div class="buttons">
-        //            <button id="Delbtn ${todo[tasks][task].title} " class=' ${tasks} ' >
-        //           <img src="../src/assets/delete.svg" id='Del ${todo[tasks][task].title}' class='${tasks}' alt="">
-        //         </button>
-        //     </div>
-        //     </div>
-        //       `;
-        // taskdiv.appendChild(a_task);
+        const a_task = document.createElement("div");
+        a_task.classList.add("task");
+        a_task.innerHTML = `
+            <div class="taskleft"> 
+                <div class="taskTitle"><input type="checkbox">${todo[project][tasks].title}:</div>
+                <div class="taskDesc">${todo[project][tasks].description}</div>
+            </div>
+            <div class="taskRight">
+                <div class="taskDate">${format(parseISO(todo[project][tasks].date),"dd/MM/yyyy",new Date())}</div>
+                <div class="buttons">
+                   <button id="Delbtn ${todo[project][tasks].title} " class=' ${project} ' >
+                  <img src="../src/assets/delete.svg" id='Del ${todo[project][tasks].title}' class='${project}' alt="">
+                </button>
+            </div>
+            </div>
+              `;
+        taskdiv.appendChild(a_task);
       }
     }
   }
@@ -61,7 +64,7 @@ export default function Thisweek(todo) {
       console.log('deleting');
       delete todo[title][secondpart];
       localStorage.setItem("todo", JSON.stringify(todo));
-      showall(todo);  // Re-render after deletion
+      Thisweek(todo)  // Re-render after deletion
     }
   });
 }
